@@ -1,0 +1,113 @@
+オンラインショッピング - - - - - - - - - - - - - - - - - - - - - - - - 
+
+●販売サービス（月額有料）
+月の収益がある程度見込める状態で完全な別サイトに商品を登録する
+マーケティングプロモーションや顧客管理、アクセス解析などもサービスに含まれることが多い。
+　楽天ショッピング  初期費用60,000円 月額50万の収益見込みで49,405円/月～
+　Yahooショッピング  初期登録Yahooプレミアム月額300円 手数料3.24～4.48%
+　カラーミーショップ  月額1,332円～(FTP使用料540円/月)
+　Goodsie 初期登録無料 月額4500円～
+
+●販売サービス（使用料無料）
+自サイトから商品一覧ページをリンクさせるだけで
+定型サービスを利用できるので構築する手間を省ける。
+ただしページのデザインを自サイトに合わせてカスタマイズできない。
+　minne 初期登録無料 手数料10%
+　Stores.jp 初期登録無料 手数料5%
+　AirREGI 初期登録無料 手数料3.75%
+　LINEウェブストア 初期登録無料 LINEPay手数料200円
+　BASE 初期登録無料 手数料5%+40円+500円
+　Gumroad 初期登録無料 手数料5%+30セント
+　Cart 手数料250円 https://cart.st/biz
+http://www.atmarkit.co.jp/ait/articles/1303/15/news010_2.html
+
+●決済サービス（使用料無料）
+自サイトの商品詳細ページの購入ボタンから
+カード決済のサービスだけシステムを導入する。
+商品一覧や詳細ページはオリジナルデザインで作成できる。
+　PayPal 手数料3.6%+40円（決済画面のカスタマズは有料）
+　LINEPay 手数料200円
+　SPIKE 売上100万まで無料
+　WebPay 手数料3.25～3.4%
+　FastPay 手数料3.4%
+　stripe 手数料3.6%
+http://keiei.freee.co.jp/2015/06/01/paypal-spike-stripe-webpay-yahoowalletfastpay/
+
+●オリジナルデザイン販売サイト（使用料無料）
+PHPとデータベース＋デザイン用のテンプレートを
+使い全てオリジナルでカスタマイズが可能
+顧客管理や商品登録、デザイン変更の管理画面が全て用意されている。
+ただし自分でカスタマイズする場合は各言語の知識が必要。
+　WordPress Welcartプラグイン + Paypal
+http://www.welcart.com/
+　EC-Cube + Paypal
+http://www.ec-cube.net/product/demo.php
+
+●オリジナルデザイン販売サイト（システム購入有料）
+　CS-Cart 購入料金99,800円 決済手数料3.5%
+http://cs-cart.jp/
+
+●ネットショップの4つの展開パターンhttps://sync-g.co.jp/1181/
+
+●簡単なクイックインストール
+さくらサーバーWordPressクイックインストール
+http://www.adminweb.jp/wordpress/install/index5.html
+さくらサーバーEC-Cubeクイックインストール(2015/10/15から提供開始)
+http://mushikago.com/i/?p=6616
+
+●ショッピングカートのPHPオリジナル作成
+http://www.itmedia.co.jp/enterprise/0401/23/epn01.html
+
+●WelCart導入手順
+・Welcart e-commerceプラグインをインストール有効化
+
+・Welcart無料テーマをインストール　http://home.miwas.net/shop/
+
+・基本設定　＞　営業設定/ショップ設定/支払い方法/共通オプションを設定（とりあえずメアドだけでOK）
+
+・配送設定
+クレジット決済の設定　＞　Paypal以外は月額料金がかかるPaypal
+  ・Paypal EC(エクスプレスチェックアウト)は、各商品ごとに直接Paypalの専用決済画面に移動して決済を行う。
+    デザイン変更ができないのでブランドイメージが保ちづらい
+  ・Paypal WPP(ウェブペイメントプラス)は、自サイトの決済ページの中に
+    iframeを埋め込めるのでデザインカスタマイズが可能。
+    ただし月額3000円で身元証明が必要。
+  ・Sandboxは、テスト用の決済アカウントを生成
+Paypalビジネスアカウントを取得　https://www.paypal.com/jp/webapps/mpp/how-to-signup-business
+PaypalECに必要な情報を入力して登録
+
+・商品登録　＞　新規商品追加/画像登録/商品マスター（並び替え）
+※商品追加はCSV一括登録が可能　ダミーhttp://www.welcart.com/community/archives/632
+ファイルを.csvに別名保存＞商品マスター＞操作フィールド表示＞商品一括登録で読み込み
+
+・商品画像の登録　例えば画像名がpp-001.jpgの場合、商品コードをpp-001 とすることで紐付けられる。
+サブ画像も同様にpp-001--01の場合、pp-001--01.jpgとなる。※-は必須ではなく管理しやすいファイル名を付けるようにする。
+
+・価格　sku（ストックキーピングユニット）1つのグループとしてまとまった最小管理単位のこと
+デザインが全て同じシャツにサイズがS/M/L/XLの4種類、
+もしくはサイズはMのみで色が赤/青/白/緑の4種類。どちらも1アイテム4SKUと数える。
+なので、色やサイズごとに各単価を分けて設定することができる。
+
+・「お勧め商品」にチェックを入れないとトップページに商品が表示されない。
+
+・商品設定のリンク　http://wp.commude.co.jp/category/welcart/　 /　http://entrys.jp/manual/welcart/index.html
+
+・子テーマのhome.php内の商品の繰り返し範囲内に「テスト」と文字を記述して、トップの各商品に表示されるか試してみる。
+子テーマのstyle.cssのbodyのbackground-imageをコメントアウトして反映されるか試してみる。
+親テーマはアップデート時に修正が増えるためいじらない。
+
+・カスタマイズのリンク　http://whisper.sakura.ne.jp/diary/2012/02/welcart-and-wordpress.html
+
+
+ミニマムテーマ開発 - - - - - - - - - - - - - - - - - - - - - - - - 
+
+●アンダースコアSを使って実装
+http://olein-design.com/ready-for-creating-theme-by-underscores
+
+□ダミーテキスト実装　http://wpdocs.osdn.jp/Theme_Unit_Test　日本語データをダウンロード
+　管理画面＞ツール＞インポート＞WordPress＞プラグインをインストール＞xmlファイルを読み込み＞
+　エラーコードが出てもImportAttachmentにチェックを入れてSubmitを実行するHaveFun!と最後に出れば完了
+
+□wp-config.phpのエラーレポートをtrueに変更し、
+Theme-Checkプラグインを有効化することでテーマ制作に問題ないかを厳しくチェック
+

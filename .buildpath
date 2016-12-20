@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="AlohaGo"/>
+	<buildpathentry kind="lib" path="bootstrap-3.3.7-dist.zip"/>
+	<buildpathentry kind="lib" path="bootstrap-3.3.7.zip"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>
